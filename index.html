@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/estilo1.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+<!-- inicio -->
+ <div data-role="page" id="inicio" >   
+  <div data-role="header">
+  <div style=" width:70%; height:180px; float:left;">
+    <p>calcula cuantos dias faltan para tu cumple</p>
+    </div>
+     <div style="width:30%; float:left;">
+   <img src="images/url.png" width="200" height="180">
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Con esta aplcacion podras calcular cuantos dias faltan para tu cumple y asi prepararte mejor con tu fiesta y no quedar mal con tus invitados </p>
+  </div>
+  <div align="right">
+  <a href="#datos" class="ui-btn ui-icon-check ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " id="btninicio"> Inicio</a>
+</div>
+  <div data-role="footer">
+    <h1>
+    @Lucero Romero Castellano
+    </h1>
+    <h1>
+    @Janet tlapale ramos
+    </h1>
+  </div>
+ </div>  
+ <!-- inicio -->
+
+ 
+  <!-- datos -->
+ <div data-role="page" id="datos" >   
+  <div data-role="header">
+  
+  
+    <h1>Escribe tu nombre:</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div align="center">
+     <input type="text" id="txtnombre" value="" placeholder="nombre">
+    </div>
+    <div align="center" data-role="controlgroup" data-type="horizontal">
+      <a href="#inicio" class="ui-btn ui-shadow ui-btn-corner-all ui-icon-arrow-l ui-btn-icon-left" id="btnatras">ATRAS</a>
+       <a href="#fecha" class="ui-btn ui-shadow ui-btn-corner-all ui-icon-arrow-r ui-btn-icon-right" id="btnsiguiente">SIGUIENTE</a>
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>@Janer Tlapale Ramos</h1>
+    <h1>@Lucero Romero Castellano</h1>
+  </div>
+ </div>  
+ <!-- datos -->
+ 
+  <!-- fecha -->
+ <div data-role="page" id="fecha" >   
+  <div data-role="header">
+    <h1>¿que dia naciste?</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+   <div  data-role="controlgroup" data-type="horizontal">
+  
+    <div  align="center">
+     <input type="text" id="txtdia" value="" placeholder="dia">
+    </div>
+    <div  align="center" >
+     <input type="text" id="txtmes" value="" placeholder="mes">
+    </div>
+    <div  align="center" >
+     <input type="text" id="txtaño" value="" placeholder="año">
+    </div>
+   </div>
+   
+   <div align="center" data-role="controlgroup" data-type="horizontal">
+      <a href="#datos" class="ui-btn ui-shadow ui-btn-corner-all ui-icon-arrow-l ui-btn-icon-left" id="btnanterior">Atras</a>
+       <a href="#resultado" class="ui-btn ui-shadow ui-btn-corner-all ui-icon-arrow-r ui-btn-icon-right" id="btncalcular">Calcular</a>
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>@Janet Tlapale Ramos</h1>
+    <h1>@Lucero Romero Castellano</h1>
+  </div>
+ </div>  
+ <!-- fecha -->
+ 
+  <!-- resultado -->
+ <div data-role="page" id="resultado" >   
+  <div data-role="header">
+    <h1>Encabezado</h1>
+     
+  </div>
+  
+
+ <div data-role="main" class="ui-content">
+    <div id="felicitacion" align="center" class="final">
+     
+    </div>
+    <div id="nombre" align="center" class="final">
+    
+    </div>
+    <div id="dias" align="center" class="final">
+    
+    </div>
+    <div id="felicidad" align="center" class="final">
+    
+    </div>
+     <div id="feliz" align="center" class="final">
+     
+    </div>
+    <div id="anios" align="center" class="final">
+    
+    </div>
+    <div id="divbtninicio" align="justify" >
+     <a href="#inicio" class="ui-btn ui-shadow ui-btn-corner-all ui-icon-arrow-l ui-btn-icon-left" id="btndatos">Inicio</a>
+    </div>
+    
+  <div data-role="footer">
+    <h1>@Janet Tlapale Ramos</h1>
+    <h1>Lucero Romero Castellano</h1>
+  </div>
+ </div>  
+ <!-- resultado -->
+
+ </body>
+</html> 
